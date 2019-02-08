@@ -1,5 +1,12 @@
 # Python_Practice
 
+### Note:
+
+ Naming convention : num.py
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
 ## Prerequisites:
 1.	Handling Input and Output
 2.	Looping constructs
