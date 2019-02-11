@@ -1,39 +1,44 @@
-n = int(input("Enter N: "))
-m = n*3
+numberOfRows = int(input("Enter numberOfRows: "))
+stringVal = input("Enter String: ")
+length = len(stringVal)
+numberOfColumn = numberOfRows*3
 
-s = input("Enter String: ")
-mid = int(n/2)
 
-patt= ".|."
+stringLine = int(numberOfRows/2)
+
+pattern= ".|."
 dash = "-"
-length = len(s)
+
 
 def printW(num):
     print(dash* int(num))
+    
+def printPattern(i):
+    pattSize = len(pattern*i)
+    w = (numberOfColumn-pattSize)/2
+    a= dash* int(w)+ pattern *i + dash* int(w)
+   # if(i>stringLine+1):
+   #     return
+   # if(len(a)<=numberOfColumn):
+    print(a)
+    
+    #else:
+       # print(dash* int(w)+ pattern *(i-int((len(a)-numberOfColumn)/2)) + dash* int(w))
 
-def f1(i):
-    pattSize = len(patt*i)
-    w = (m-pattSize)/2
-    a= dash* int(w)+ patt *i + dash* int(w)
-    if(len(a)<=m):
-        print(a)
-    else:
-        print(dash* int(w)+ patt *(i-int((len(a)-m)/2)) + dash* int(w))
 
-
-def printStr():
-    w= len(s)
-    print(dash* int((m-w)/2) + s + dash* int((m-w)/2))
+def printStr(i):
+    w= len(stringVal)
+    print(dash* int((numberOfColumn-w)/2) + stringVal + dash* int((numberOfColumn-w)/2))
+    i-=2
    
 def run():
     i=1
-    while( i<int(m/2)):
-        f1(i)
+    while( i<=stringLine+1):
+        printPattern(i)
         i+=2
-    printStr()
-    i-=2
+    printStr(i)
     while(i>=1):
-        f1(i)
+        printPattern(i)
         i-=2
     
 run()
