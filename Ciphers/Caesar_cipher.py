@@ -13,7 +13,7 @@ def mapping():
         seriesEnlv1[alphalv1[i]]=i
         seriesDelv1[i]=alphalv1[i]
     alphalv2='ZYXWVUTSRQPONMLKJIHGFEDCBA'
-    for i in range(-25,0):
+    for i in range(-26,0):
         seriesEnlv2[alphalv2[i]]=i
         seriesDelv2[i]=alphalv2[i]
     
@@ -59,6 +59,7 @@ def remodify(string):
 
 def textconv(text,key):
     mapping()
+    key=key%26
     text=modify(text)
     code=[]
     global seriesEnlv1
@@ -72,6 +73,7 @@ def textconv(text,key):
 
 def textrevert(encoded,key):
     code=[]
+    key=key%26
     global seriesEnlv1
     for i in encoded:
         if (i.islower()):
