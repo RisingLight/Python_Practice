@@ -1,4 +1,5 @@
 # making of Caesar Cipher
+import sys
 seriesEnlv1=dict()
 seriesDelv1=dict()
 seriesEnlv2=dict()
@@ -16,7 +17,13 @@ def mapping():
     for i in range(-26,0):
         seriesEnlv2[alphalv2[i]]=i
         seriesDelv2[i]=alphalv2[i]
-    
+
+def check(message):
+    for i in message:
+        if((i==" " or i.isalpha())==False):
+            print("\n Message can't be send, remove any numbers or special symbols to continue ")
+            raise Exception(" message fault ")   
+            
 
 def message(code):
     mess=[]
@@ -60,6 +67,11 @@ def remodify(string):
 def textconv(text,key):
     mapping()
     key=key%26
+    try:
+        check(text)
+    except:
+        print(" Message format is incorrect ")
+        sys.exit()
     text=modify(text)
     code=[]
     global seriesEnlv1
@@ -70,6 +82,7 @@ def textconv(text,key):
         else:
             code.append((seriesEnlv1[i]+key)%26)
     return (message(code))
+  
 
 def textrevert(encoded,key):
     code=[]
@@ -87,12 +100,19 @@ def textrevert(encoded,key):
         code.append(x)
     return remodify(message(code))
 
-simpleText=input("Enter the simple text : ")
-key=int(input(" Enter the key for the Text :"))
-encoded=textconv(simpleText,key)
-print(encoded)
-decoded=textrevert(encoded,key)
-print(decoded)
+def main():
+    simpleText=input("Enter the simple text : ")
+    try:
+        key=int(input(" Enter the key for the Text :"))
+    except:
+        print(" Enter only numeric key ")
+        sys.exit()
+    encoded=textconv(simpleText,key)
+    print(encoded)
+    decoded=textrevert(encoded,key)
+    print(decoded)
+
+main()
 
 
     
