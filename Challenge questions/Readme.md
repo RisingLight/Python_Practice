@@ -23,7 +23,7 @@ Wish to give a challenge? sure just make an edit, and throw the pull request ;)
 		d)Following punctuation marks are to be supported - Comma Question mark, Full stop, Semicolon, Exclamation .
 		e)Do this for a file and maintain sequences of lines .
 4.	Reading from a CSV file and printing all colums as rows.
-5.	***Challenge Awaits***
+5.	Given Strings of code equations like, "45 >= 67 56==70 30 <= 78" and output should be binary "0 0 1" { input is seprated with space and output should be on new line}
 6.	***Challenge Awaits***
 7.	***Challenge Awaits***
 ---------------------------------------------------------------------------------------------------------------------------------------
