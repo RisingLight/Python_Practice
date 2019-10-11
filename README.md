@@ -1,4 +1,4 @@
-# Python_Practice
+# Python Practice
 
 
 **Challenge Questions :** This folder contains the challenge question which you might want to do.
