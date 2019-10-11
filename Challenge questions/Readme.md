@@ -5,7 +5,7 @@
 **More you complete the challenges, more you will be able to do**
 
 ### Note:
-Make a Folder of your Name and complete the Challenges given below
+Make a folder of your **Github username** and complete the challenges given below
 
 Wish to give a challenge? sure just make an edit, and throw the pull request ;)
 
