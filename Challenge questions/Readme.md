@@ -38,4 +38,14 @@ Reading from a CSV file and printing all colums as rows.
 ### Challenge 5
 Given Strings of code equations like, `"45 >= 67 56==70 30 <= 78"` and output should be binary `"0 0 1"` { input is seprated with space and output should be on new line}
 ### Challenge 6
+WAP that inputs the length and breadth of a sheet, this sheet should be made of a diamond design with '~' and the rest of the corners should be filled with '#'
+eg- size=7X7
+    ###~###
+    ##~~~##
+    #~~~~~#
+    ~~~~~~~
+    #~~~~~#
+    ##~~~##
+    ###~###
+    
 ***Challenge Awaits***
