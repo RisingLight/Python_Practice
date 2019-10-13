@@ -9,7 +9,6 @@ Make a folder of your **Github username** and complete the challenges given belo
 
 Wish to give a challenge? sure just make an edit, and throw the pull request ;)
 
----------------------------------------------------------------------------------------------------------------------------------------
 
 ## Challenges:
 
