@@ -1,0 +1,14 @@
+from pandas import read_csv
+
+def CSV_print(filename):
+        df = read_csv(filename)
+        columns = df.columns
+        for i in range(len(columns)):
+                print("Row ", i+1, ": ", ", ".join(map(str,  df[columns[i]])))
+
+if __name__ == "__main__":
+        filename = str(input("Enter filename or path:"))
+        print(filename)
+        CSV_print(filename)
+
+        
