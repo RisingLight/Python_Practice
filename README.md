@@ -21,15 +21,15 @@
 | |`###~###`|
 |8|Given a singly linked list of N nodes, find the middle of the linked list. For example, if given linked list is 1->2->3->4->5 then output should be 3. If there are even nodes, then there would be two middle nodes. So we need to print second middle element. Eg., if given linked list is 1->2->3->4->5->6 then output should be 4.|
 |9| Input a list having negative and positive integers.
-<li>Output: Arranging them in increasing order(excluding negative impact).</li>
+<ul><li>Output: Arranging them in increasing order(excluding negative impact).</li>
 <li>Eg: Input: -8,-5,-3,-1,3,6,9</li>
 <li>Output: -1, -3, 3, -5, 6, -8, 9</li>
 <li>Excluding negation, list is 1,3,3,5,6,8,9. So list will be accordingly.</li>
-<li>Order should be followed.(If -3 came before 3, then order should be same i.e., -3,3)|
+<li>Order should be followed.(If -3 came before 3, then order should be same i.e., -3,3)</li></ul>|
 |10|Given a list with N numbers and a sum S, find all pairs(2 numbers) from the list which add upto S.
-<li>Input: list: 1,4,6,45,10,8,8</li>
+<ul><li>Input: list: 1,4,6,45,10,8,8</li>
 <li>Sum: 16</li>
-<li>Output: 10 and 6, 8 and 8|
+<li>Output: 10 and 6, 8 and 8</li></ul>|
 
 **Ciphers :** This folder contains the encryption and Decryption algorithms.
 
